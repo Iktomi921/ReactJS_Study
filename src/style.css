@@ -1,17 +1,70 @@
-.nav {
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:  sans-serif;
+    height: 100vh;
+    background-color: #292d35;
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.nav-items {
-    list-style: none;
-    display: flex;
-}
-
-.nav-items > li {
-    padding: 10px;
+    background-color: #21222A;
+    padding: 30px 25px;
+    height: 90px;
 }
 
-.nav > .nav-img {
-    width: 80px;
+nav > .nav--icon {
+    max-width: 30px;
+    margin-right: 8px;
+}
+
+nav > .nav--title {
+    margin: 0;
+    color: #deebf8;
+}
+
+nav > .nav--logo_text {
+    margin: 0;
+    margin-right: auto;
+    color: #61dafb;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+main {
+    background-color: #292d35;
+    height: 100%;
+    padding: 57px 27px;
+    color: white;
+    background-image: url(./img/react_icon.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 75%;
+    background-size: 200px;
+}
+
+.main--title {
+    margin:  0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+
+}
+
+.main--fact {
+    margin-top: 46px;
+}
+.main--fact > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--fact > li::marker {
+    font-size: 1.4rem;
+    color: #61dafb;
 }
