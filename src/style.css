@@ -1,70 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family:  sans-serif;
+    font-family:  sans-serif, 'Poppins';
     height: 100vh;
-    background-color: #292d35;
+    /* background-color: #292d35; */
 }
 
 nav {
     display: flex;
     align-items: center;
-    background-color: #21222A;
+    /* background-color: #21222A; */
     padding: 30px 25px;
-    height: 90px;
+    height: 70px;
+    box-shadow: 0px 2.9px 7.4px rgba(0, 0, 0, 0.1);
 }
 
 nav > .nav--icon {
-    max-width: 30px;
+    
     margin-right: 8px;
+    display: flex;
+    max-width: 100px;
 }
 
-nav > .nav--title {
-    margin: 0;
-    color: #deebf8;
+.section--grid {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-nav > .nav--logo_text {
-    margin: 0;
-    margin-right: auto;
-    color: #61dafb;
-    font-weight: 700;
-    font-size: 22px;
-}
-
-main {
-    background-color: #292d35;
-    height: 100%;
-    padding: 57px 27px;
-    color: white;
-    background-image: url(./img/react_icon.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: 75%;
-    background-size: 200px;
+.main--photo {
+    max-width: 400px;
+    align-items: center;
 }
 
 .main--title {
-    margin:  0;
-    font-size: 39px;
-    letter-spacing: -0.05em;
-
+    margin-bottom: 16px;
 }
 
-.main--fact {
-    margin-top: 46px;
-}
-.main--fact > li {
-    line-height: 19px;
-    padding-block: 10px;
-}
-
-.main--fact > li::marker {
-    font-size: 1.4rem;
-    color: #61dafb;
+.main--text {
+    margin-top: 0;
 }

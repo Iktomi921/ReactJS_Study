@@ -1,15 +1,13 @@
 import React from "react";
+import grid from "../img/grid.png"
 
 export default function Main(params) {
     return (
-        <main>
-            <h1 className="main--title">Fun facts about React</h1>
-            <ul className="main--fact">
-                <li>asdf</li>
-                <li>asdf</li>
-                <li>asdf</li>
-            </ul>
-        </main>
+        <section className="section--grid">
+            <img src = {grid} className ="main--photo" />
+            <h1 className="main--title">Online Experiences</h1>
+            <p className="main--text">Join our teams with unique activities</p>
+        </section>
     )
     
 }
