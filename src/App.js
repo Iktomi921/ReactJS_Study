@@ -1,23 +1,17 @@
 import React from "react";
-import Contact from "./Contact";
+import textData from "./textData";
+import Joke from "./Joke";
 
 export default function App() {
+const jokeElements = textData.map(text => {
+    return <Joke title = {text.title} content = {text.content} />
+}
+     
+)
+
     return (
         <div className="container">
-            <Contact 
-                name = "Mr. Cat A"
-            />
-            <Contact 
-                name = "Mr. Cat B"
-            />
-            <Contact 
-                name = "Mr. Cat C"
-
-            />
-            <Contact 
-                name = "Mr. Cat D"
-
-            />
+            {jokeElements}
         </div>
     )
 }
