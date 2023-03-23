@@ -1,15 +1,23 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Main from "./Components/Main";
-import Card from './Components/Card'
-
+import Contact from "./Contact";
 
 export default function App() {
     return (
         <div className="container">
-            <Navbar />
-            <Main />
-            <Card />
+            <Contact 
+                name = "Mr. Cat A"
+            />
+            <Contact 
+                name = "Mr. Cat B"
+            />
+            <Contact 
+                name = "Mr. Cat C"
+
+            />
+            <Contact 
+                name = "Mr. Cat D"
+
+            />
         </div>
     )
 }

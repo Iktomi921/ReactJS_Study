@@ -12,37 +12,28 @@ body {
     /* background-color: #292d35; */
 }
 
-nav {
+.container {
     display: flex;
+}
+
+.contact-card {
+    display: block;
+    box-shadow: 10px 10px 8px 10px #c6a9a9;
+    /* border: solid 1px black; */
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact-card > img {
     align-items: center;
-    /* background-color: #21222A; */
-    padding: 30px 25px;
-    height: 70px;
-    box-shadow: 0px 2.9px 7.4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
 }
 
-nav > .nav--icon {
-    
-    margin-right: 8px;
-    display: flex;
-    max-width: 100px;
-}
-
-.section--grid {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.main--photo {
-    max-width: 400px;
-    align-items: center;
-}
-
-.main--title {
-    margin-bottom: 16px;
-}
-
-.main--text {
-    margin-top: 0;
+.contact-card > .info {
+    margin: 10px;
 }
